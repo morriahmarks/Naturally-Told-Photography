@@ -90,14 +90,14 @@ nav a:hover {
 }
 
 .main-image img {
-    width: 100%;
-    max-width: 100%;
+    width: 80%;
+    max-width: 850px;
     height: auto;
     display: block;
     border: none;
     padding: 0;
     box-shadow: none;
-    margin: 0 auto;
+    margin: 2rem auto;
     border-radius: 8px;
 }
 
