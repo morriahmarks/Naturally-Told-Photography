@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Naturally Told Photography</title>
+
+    <meta name="description" content="Contact Naturally Told Photography to inquire about documentary-style family, event, and lifestyle photography in Boise, Idaho.">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <header>
     <div class="header-inner">
@@ -23,30 +28,63 @@
     </div>
 </header>
 
-<nav>
+<nav aria-label="Main navigation">
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
     </ul>
 </nav>
 
-<main>
+<main id="main-content">
     <h2>Contact</h2>
 
-    <form>
-        <label>Name:</label>
-        <input type="text">
+    <p>
+        Have a question or want to schedule a session? I'd love to hear from you!
+        Complete the form below and I'll get back to you as soon as possible.
+    </p>
 
-        <label>Email:</label>
-        <input type="email">
+    <form action="#" method="post">
 
-        <label>Message:</label>
-        <textarea rows="5"></textarea>
+        <div>
+            <label for="name">Name</label><br>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required>
+        </div>
 
-        <button type="submit">Send</button>
+        <br>
+
+        <div>
+            <label for="email">Email</label><br>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="message">Message</label><br>
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required></textarea>
+        </div>
+
+        <br>
+
+        <button type="submit">Send Message</button>
+
     </form>
 </main>
 
@@ -63,15 +101,20 @@
 
             <div class="footer-icons">
 
-                <a href="https://instagram.com/youraccount" target="_blank" aria-label="Instagram">
+                <a href="https://instagram.com/youraccount"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Visit Naturally Told Photography on Instagram">
                     <img src="images/icon-ig.png" alt="Instagram">
                 </a>
 
-                <a href="mailto:youremail@example.com" aria-label="Email">
+                <a href="mailto:youremail@example.com"
+                   aria-label="Send an email">
                     <img src="images/icon-email.png" alt="Email">
                 </a>
 
-                <a href="tel:12085551212" aria-label="Phone">
+                <a href="tel:12085551212"
+                   aria-label="Call Naturally Told Photography">
                     <img src="images/icon-phone.png" alt="Phone">
                 </a>
 
