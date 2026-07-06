@@ -444,10 +444,11 @@ footer {
 }
 
 .about-photo {
-    width: 300px;
-    max-width: 100%;
+    width: 200px;
+    max-width: 200px;
     height: auto;
     border-radius: 8px;
+    flex-shrink: 0;
 }
 
 .about-text {
