@@ -428,3 +428,31 @@ footer {
     left: 10px;
     top: 10px;
 }
+.about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+}
+
+.about-photo {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-photo {
+        width: 100%;
+        max-width: 400px;
+    }
+}
