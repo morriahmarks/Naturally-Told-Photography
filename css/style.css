@@ -164,8 +164,16 @@ main p {
 
 .card {
     background: var(--secondary-color);
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 1rem;
+}
+
+.card p {
+    margin-top: 0.5rem;
 }
 
 article {
@@ -452,6 +460,120 @@ footer {
     }
 
     .about-photo {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+/* ==========================
+   About Page Layout
+========================== */
+.about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+}
+
+.about-figure {
+    width: 300px;
+    max-width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.about-photo {
+    width: 100%;
+    height: auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+/* ==========================
+   Portfolio Caption Overlays
+========================== */
+.portfolio-figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.portfolio-figure img,
+.about-figure img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    border: none;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Portfolio captions appear on hover */
+.portfolio-figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: 0;
+    padding: 0.75rem 1rem;
+
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0)
+    );
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-figure:hover figcaption {
+    opacity: 1;
+}
+
+/* About caption always visible */
+.about-figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: 0;
+    padding: 0.75rem 1rem;
+
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0)
+    );
+}
+
+/* ==========================
+   Mobile
+========================== */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-figure {
         width: 100%;
         max-width: 400px;
     }
