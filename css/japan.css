@@ -8,13 +8,13 @@
   --indigo: #24364b;
   --deep-indigo: #172536;
   --red: #a83232;
-  --paper: #f7f3ea;
+  --paper: #ffffff;
   --white: #ffffff;
   --ink: #262626;
   --muted: #66645f;
   --gold: #b89656;
   --line: #d8d0c2;
-  --soft-blue: #e9eef1;
+  --soft-blue: #f6f8fa;
   --card-shadow: 0 14px 32px rgba(36, 54, 75, 0.12);
   --card-shadow-hover: 0 20px 42px rgba(36, 54, 75, 0.2);
 }
@@ -668,8 +668,8 @@ main {
 .portfolio-preview {
   background:
     linear-gradient(
-      rgba(247, 243, 234, 0.96),
-      rgba(247, 243, 234, 0.96)
+      rgba(255,255,255,0.96),
+      rgba(255,255,255,0.96)
     ),
     radial-gradient(
       circle at 100% 100%,
